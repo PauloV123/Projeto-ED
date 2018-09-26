@@ -1,0 +1,36 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include <QMessageBox>
+#include "cadastro.h"
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+void MainWindow::on_actionCadastro_triggered()
+{
+    Cadastro cadastro;
+    cadastro.setModal(true);
+    cadastro.exec();
+
+}
+
+void MainWindow::on_actionCheck_In_triggered()
+{
+
+    QMessageBox::information(this,"title","Check In concluido!");
+
+
+}
+
+void MainWindow::on_actionCheck_out_triggered()
+{
+    QMessageBox::information(this,"title","Check Out concluido!");
+}
