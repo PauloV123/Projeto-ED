@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>Menu/inbox-download-symbol-of-interface_icon-icons.com_54512.png</file>
+        <file>Menu/outbox.png</file>
+        <file>Menu/person-add_icon-icons.com_50077.png</file>
+        <file>Menu/arrow-curve-090-left-icon.png</file>
+        <file>Menu/arrow-curve-270-left-icon.png</file>
+        <file>Menu/user-silhouette-question-icon.png</file>
+        <file>Menu/Users-Enter-2-icon.png</file>
+        <file>Menu/Users-Exit-icon.png</file>
+        <file>Menu/Household-Broom-icon.png</file>
+    </qresource>
+</RCC>
