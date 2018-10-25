@@ -18,6 +18,8 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_CadCPF_clicked();
+
 private:
     Ui::Cadastro *ui;
 };

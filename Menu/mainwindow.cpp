@@ -2,16 +2,21 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include "cadastro.h"
+#include "checkin.h"
+#include "checkout.h"
+#include "limpeza.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+
 }
 
 void MainWindow::on_actionCadastro_triggered()
@@ -19,18 +24,31 @@ void MainWindow::on_actionCadastro_triggered()
     Cadastro cadastro;
     cadastro.setModal(true);
     cadastro.exec();
+    int n = 0;//aumentar o numero de pessoas
+    n++;
 
 }
 
 void MainWindow::on_actionCheck_In_triggered()
 {
+    CheckIn checkin;
+    checkin.setModal(true);
+    checkin.exec();
 
-    QMessageBox::information(this,"title","Check In concluido!");
 
 
 }
 
 void MainWindow::on_actionCheck_out_triggered()
 {
-    QMessageBox::information(this,"title","Check Out concluido!");
+    CheckOut checkout;
+    checkout.setModal(true);
+    checkout.exec();
+}
+
+void MainWindow::on_actionFaxineira_triggered()
+{
+    Limpeza limpeza;
+    limpeza.setModal(true);
+    limpeza.exec();
 }

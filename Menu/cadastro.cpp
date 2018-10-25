@@ -8,6 +8,7 @@ Cadastro::Cadastro(QWidget *parent) :
     ui(new Ui::Cadastro)
 {
     ui->setupUi(this);
+    ui->cpf->setText("");
 }
 
 Cadastro::~Cadastro()
@@ -18,7 +19,7 @@ Cadastro::~Cadastro()
 void Cadastro::on_pushButton_clicked()
 {
     //aqui ta abrindo na minha pasta de usuario, pra abrir na sua é só colocar a sua pasta no lugar de "paulo"
-    QFile file("C:/Users/paulo/Documents/Menu/Pasta de Cadastro/Cadastro.txt");
+    QFile file("C:/Users/pedro/OneDrive/Área de Trabalho/Menu/Pasta de Cadastro/Cadastro.txt");
 
     if(!file.open(QFile::WriteOnly | QFile::Text)){
         QMessageBox::warning(this,"title","FILE NOT OPEN");
@@ -28,4 +29,13 @@ void Cadastro::on_pushButton_clicked()
     out << text;
     file.flush();
     file.close();
+    QMessageBox::information(this,"title","Cadastro concluido!");
+
+
+
+}
+
+void Cadastro::on_CadCPF_clicked()
+{
+    ui->cpf->setText(QString::number(ui->cp->value()));
 }

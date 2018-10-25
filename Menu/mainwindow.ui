@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>284</width>
+    <height>187</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Menu</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="label">
@@ -19,8 +19,8 @@
      <rect>
       <x>0</x>
       <y>20</y>
-      <width>47</width>
-      <height>13</height>
+      <width>61</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
@@ -32,7 +32,7 @@
      <rect>
       <x>0</x>
       <y>50</y>
-      <width>51</width>
+      <width>61</width>
       <height>16</height>
      </rect>
     </property>
@@ -45,12 +45,25 @@
      <rect>
       <x>0</x>
       <y>80</y>
-      <width>51</width>
+      <width>71</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>Check Out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpeza dos quartos</string>
     </property>
    </widget>
   </widget>
@@ -59,8 +72,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
-     <height>21</height>
+     <width>284</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">
@@ -70,6 +83,7 @@
     <addaction name="actionCadastro"/>
     <addaction name="actionCheck_In"/>
     <addaction name="actionCheck_out"/>
+    <addaction name="actionFaxineira"/>
    </widget>
    <addaction name="menuMenu"/>
   </widget>
@@ -78,11 +92,12 @@
     <enum>LeftToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>true</bool>
+    <bool>false</bool>
    </attribute>
    <addaction name="actionCadastro"/>
    <addaction name="actionCheck_In"/>
    <addaction name="actionCheck_out"/>
+   <addaction name="actionFaxineira"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionCadastro">
@@ -110,6 +125,15 @@
    </property>
    <property name="text">
     <string>Check out</string>
+   </property>
+  </action>
+  <action name="actionFaxineira">
+   <property name="icon">
+    <iconset resource="menuzinho.qrc">
+     <normaloff>:/rec/Menu/Household-Broom-icon.png</normaloff>:/rec/Menu/Household-Broom-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faxineira</string>
    </property>
   </action>
  </widget>

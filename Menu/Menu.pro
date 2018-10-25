@@ -27,15 +27,28 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    cadastro.cpp
+    cadastro.cpp \
+    checkin.cpp \
+    checkout.cpp \
+    limpeza.cpp
 
 HEADERS += \
         mainwindow.h \
-    cadastro.h
+    cadastro.h \
+    checkin.h \
+    checkout.h \
+    limpeza.h \
+    filacircular.h \
+    noldde.h \
+    ldde.h \
+    pilha.h
 
 FORMS += \
         mainwindow.ui \
-    cadastro.ui
+    cadastro.ui \
+    checkin.ui \
+    checkout.ui \
+    limpeza.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

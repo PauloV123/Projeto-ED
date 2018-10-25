@@ -22,6 +22,8 @@ private slots:
 
     void on_actionCheck_out_triggered();
 
+    void on_actionFaxineira_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
