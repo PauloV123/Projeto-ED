@@ -1,0 +1,11 @@
+Menu: Colocamos 4 botões que levaram para telas diferentes do programa
+
+Cadastro: Colocamos um campo de texto para ser preenchido com alguns dados da pessoa e depois um campo pra preencher com o número de telefone, esse número inserimos dentro da estrutura de dados que no caso do cadastro foi a LDDE.
+
+Check in: No Check In colocamos um campo de texto onde será mostrado o arquivo das pessoas cadastradas no hotel e depois de confirmado o cadastro a pessoa pode pegar o número do quarto, esse número nós inserimos em outra estrutura de dados, no caso do Check In usamos a fila circular.
+
+Check Out: Colocamos os mesmos campos que foram preenchidos com os valores inseridos na estruturas e só removemos esses dados da estrutura, no caso do número de telefone nós removemos da LDDE e o número do quarto nós removemos da fila circular.
+
+Limpeza: Na limpeza nós pensamos no caso da limpeza diária de todos os quartos, então nós inserimos o primeiro preenchimento da pilha dizendo que ela está passando pelo quarto, vendo se está ocupado ou não e na volta estamos desempilhando, indicando os quartos que ela está limpando. 
+
+No caso do nosso hotel temos 10 quartos no total, para facilitar nos testes da pilha.
