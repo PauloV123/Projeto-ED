@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>284</width>
+    <height>198</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Menu</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastro</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check In</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check Out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpeza dos quartos</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>284</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionCadastro"/>
+    <addaction name="actionCheck_In"/>
+    <addaction name="actionCheck_out"/>
+    <addaction name="actionFaxineira"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCadastro"/>
+   <addaction name="actionCheck_In"/>
+   <addaction name="actionCheck_out"/>
+   <addaction name="actionFaxineira"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionCadastro">
+   <property name="icon">
+    <iconset resource="menuzinho.qrc">
+     <normaloff>:/rec/Menu/person-add_icon-icons.com_50077.png</normaloff>:/rec/Menu/person-add_icon-icons.com_50077.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro</string>
+   </property>
+  </action>
+  <action name="actionCheck_In">
+   <property name="icon">
+    <iconset resource="menuzinho.qrc">
+     <normaloff>:/rec/Menu/Users-Enter-2-icon.png</normaloff>:/rec/Menu/Users-Enter-2-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Check In</string>
+   </property>
+  </action>
+  <action name="actionCheck_out">
+   <property name="icon">
+    <iconset resource="menuzinho.qrc">
+     <normaloff>:/rec/Menu/Users-Exit-icon.png</normaloff>:/rec/Menu/Users-Exit-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Check out</string>
+   </property>
+  </action>
+  <action name="actionFaxineira">
+   <property name="icon">
+    <iconset resource="menuzinho.qrc">
+     <normaloff>:/rec/Menu/Household-Broom-icon.png</normaloff>:/rec/Menu/Household-Broom-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Faxineira</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="menuzinho.qrc"/>
+ </resources>
+ <connections/>
+</ui>
